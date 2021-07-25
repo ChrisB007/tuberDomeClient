@@ -1,14 +1,20 @@
 import "./App.css";
-import Jumbotron from "./components/Jumbotron";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Nav from "./components/Nav";
 
 function App() {
-  // <GoogleLoginButton onClick={() => alert("Hello")} />
-  // <TwitterLoginButton onClick={() => alert("Hello")} />
-
   return (
-    <>
-      <Jumbotron />
-    </>
+    <Router>
+      <Nav />
+      <Switch>
+        <Route>
+          <div>
+            <Home />
+          </div>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
