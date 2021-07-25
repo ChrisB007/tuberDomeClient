@@ -10,7 +10,7 @@ function App() {
       <Switch>
         <Route>
           <div>
-            <Home />
+            <Home path="/" />
           </div>
         </Route>
       </Switch>
