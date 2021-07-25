@@ -1,9 +1,13 @@
 import "./App.css";
+import Jumbotron from "./components/Jumbotron";
 
 function App() {
+  // <GoogleLoginButton onClick={() => alert("Hello")} />
+  // <TwitterLoginButton onClick={() => alert("Hello")} />
+
   return (
     <>
-      <h1>This is another dog eat dog world</h1>
+      <Jumbotron />
     </>
   );
 }
