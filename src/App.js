@@ -6,14 +6,14 @@ import Nav from "./components/Nav";
 function App() {
   return (
     <Router>
-      <Nav />
-      <Switch>
-        <Route>
-          <div>
+      <div>
+        <Nav />
+        <Switch>
+          <Route>
             <Home path="/" />
-          </div>
-        </Route>
-      </Switch>
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
