@@ -11,15 +11,13 @@ function App({ value }) {
 
   const authAction = () => {
     axios
-      .get("/api/current_user")
+      .get("/auth/google/api/current_user")
       .then((res) => dispatch({ type: "AUTH_TYPE", payload: res }));
   };
 
   useEffect(() => {
     authAction();
   });
-
-  console.dir(user);
 
   return (
     <Router>
